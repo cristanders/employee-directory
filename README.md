@@ -7,9 +7,14 @@ Este proyecto consiste en una aplicación desarrollada en Angular orientada a la
 ---
 
 ## Instalación y Ejecución
+### Prerrequisitos
+* **Node.js** (LTS recomendado)
+* **Angular CLI** (`@angular/cli`)
+* **pnpm** (Gestor de paquetes predeterminado para el proyecto)
 
 1. Clona el repositorio e instala las dependencias utilizando **pnpm**:
 **pnpm install**
+
 
 ## 2. Creación Correcta del Proyecto con Angular CLI
 El proyecto se generó desde la terminal utilizando las herramientas oficiales de Angular CLI de forma limpia y sin errores de compilación.
@@ -20,19 +25,26 @@ Una vez iniciado el servidor, abre tu navegador y navega a http://localhost:4200
 
  ## 3. Estructura del Proyecto
 La arquitectura de directorios del proyecto se compone de los siguientes elementos clave:
+Descripción de los Directorios y Módulos Clave
+public/: Contiene los recursos estáticos públicos del sistema, incluyendo el icono principal (favicon.ico).
 
-src/: Directorio raíz que contiene todo el código fuente de la aplicación.
+src/app/: Núcleo de la lógica de la aplicación y organización de componentes.
 
-app/: Contiene la lógica central, módulos y componentes principales del sistema.
+components/: Contiene los bloques visuales segregados para mantener la modularidad:
 
-assets/: Carpeta destinada a recursos estáticos como imágenes, iconos o archivos multimedia.
+dashboard/: Panel principal de control y visualización general.
 
-environments/: Archivos de configuración para gestionar variables de entorno según el entorno de ejecución.
+employee-grid/: Componente encargado de desplegar la rejilla o tabla con los registros de los empleados.
 
-AppModule: Módulo principal que declara los componentes y gestiona las dependencias del sistema.
+profile/: Vista destinada a la gestión y detalle de los perfiles individuales.
 
-AppComponent: Componente raíz que sirve como contenedor principal de la interfaz visual.
+app-routing.module.ts: Configuración central del sistema de rutas de navegación entre vistas.
 
+app.module.ts: Módulo raíz (NgModule) que declara los componentes principales y gestiona las dependencias globales.
+
+src/styles.scss: Archivo de estilos globales de la aplicación.
+
+angular.json: Archivo de configuración global para el espacio de trabajo de Angular, compilación y empaquetado.
 ## 4. Generación e Integración de Componentes Iniciales
 Los componentes iniciales fueron creados mediante la interfaz de comandos y se encuentran correctamente enlazados:
 Generación de componentes mediante comando:
