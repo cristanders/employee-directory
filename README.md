@@ -9,16 +9,16 @@ Este proyecto consiste en una aplicación desarrollada en Angular orientada a la
 ## Instalación y Ejecución
 
 1. Clona el repositorio e instala las dependencias utilizando **pnpm**:
-pnpm install
+**pnpm install**
 
 ## 2. Creación Correcta del Proyecto con Angular CLI
 El proyecto se generó desde la terminal utilizando las herramientas oficiales de Angular CLI de forma limpia y sin errores de compilación.
 * Para iniciar el servidor de desarrollo local, ejecuta:
-  ng serve
+**ng serve**
 
 Una vez iniciado el servidor, abre tu navegador y navega a http://localhost:4200/. La aplicación se recargará automáticamente al modificar los archivos fuente.
 
-3. Estructura del Proyecto
+ ## 3. Estructura del Proyecto
 La arquitectura de directorios del proyecto se compone de los siguientes elementos clave:
 
 src/: Directorio raíz que contiene todo el código fuente de la aplicación.
@@ -33,7 +33,32 @@ AppModule: Módulo principal que declara los componentes y gestiona las dependen
 
 AppComponent: Componente raíz que sirve como contenedor principal de la interfaz visual.
 
-4. Generación e Integración de Componentes Iniciales
+EMPLOYEE-DIRECTORY/
+├── .angular/
+├── .vscode/
+├── node_modules/
+├── public/                 # Recursos públicos y archivos estáticos (favicon.ico)
+├── src/
+│   ├── app/
+│   │   ├── components/     # Componentes segregados del sistema
+│   │   │   ├── dashboard/    # Panel principal o vista general de métricas
+│   │   │   ├── employee-grid/# Cuadrícula o tabla de visualización de empleados
+│   │   │   └── profile/      # Vista de perfil de usuario o empleado
+│   │   ├── app-routing.module.ts # Configuración de rutas de navegación
+│   │   ├── app.component.html    # Plantilla raíz de la interfaz
+│   │   ├── app.component.scss    # Estilos globales del componente raíz
+│   │   ├── app.component.spec.ts # Pruebas unitarias del componente raíz
+│   │   ├── app.component.ts      # Lógica del componente raíz
+│   │   └── app.module.ts         # Módulo principal (NgModule)
+│   ├── index.html          # HTML principal de entrada
+│   ├── main.ts             # Punto de arranque de la aplicación Angular
+│   └── styles.scss         # Estilos globales de la aplicación
+├── .editorconfig           # Configuración de formato de código
+├── .gitignore              # Archivos ignorados por Git
+├── .prettierrc             # Reglas de formato con Prettier
+└── angular.json            # Configuración general del espacio de trabajo Angular
+
+## 4. Generación e Integración de Componentes Iniciales
 Los componentes iniciales fueron creados mediante la interfaz de comandos y se encuentran correctamente enlazados:
 Generación de componentes mediante comando:
 
@@ -41,14 +66,23 @@ ng generate component component-name
 
 Cada componente creado se encuentra integrado dentro del módulo principal y se visualiza correctamente en la interfaz de la aplicación.
 
-5. Preparación para la Conexión con el Backend
+## 5. Preparación para la Conexión con el Backend
 El proyecto cuenta con una organización básica orientada a la escalabilidad:
 
 Se ha planificado la creación de una carpeta de servicios (services/) para centralizar la lógica de peticiones HTTP.
 
 Se estructuraron los puntos de conexión base utilizando los archivos de entornos (environments), facilitando la integración asíncrona con una API backend (Node.js u otro entorno).
 
-Comandos Útiles Adicionales
+## 6. Componentes Principales
+La interfaz gráfica se encuentra fragmentada en los siguientes módulos lógicos:
+
+dashboard: Panel de control general que resume las métricas y accesos rápidos de la aplicación.
+
+employee-grid: Componente encargado de renderizar de forma tabular o en rejilla el listado de registros de empleados.
+
+profile: Componente dedicado a la visualización y gestión de la información detallada del personal.
+
+ ## Comandos Útiles Adicionales
 Construcción (Building)
 Para compilar el proyecto y generar los artefactos de producción en el directorio dist/:
 ng build
