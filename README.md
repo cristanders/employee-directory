@@ -37,26 +37,27 @@ EMPLOYEE-DIRECTORY/
 ├── .angular/
 ├── .vscode/
 ├── node_modules/
-├── public/                 # Recursos públicos y archivos estáticos (favicon.ico)
+├── public/
+│   └── favicon.ico
 ├── src/
 │   ├── app/
-│   │   ├── components/     # Componentes segregados del sistema
-│   │   │   ├── dashboard/    # Panel principal o vista general de métricas
-│   │   │   ├── employee-grid/# Cuadrícula o tabla de visualización de empleados
-│   │   │   └── profile/      # Vista de perfil de usuario o empleado
-│   │   ├── app-routing.module.ts # Configuración de rutas de navegación
-│   │   ├── app.component.html    # Plantilla raíz de la interfaz
-│   │   ├── app.component.scss    # Estilos globales del componente raíz
-│   │   ├── app.component.spec.ts # Pruebas unitarias del componente raíz
-│   │   ├── app.component.ts      # Lógica del componente raíz
-│   │   └── app.module.ts         # Módulo principal (NgModule)
-│   ├── index.html          # HTML principal de entrada
-│   ├── main.ts             # Punto de arranque de la aplicación Angular
-│   └── styles.scss         # Estilos globales de la aplicación
-├── .editorconfig           # Configuración de formato de código
-├── .gitignore              # Archivos ignorados por Git
-├── .prettierrc             # Reglas de formato con Prettier
-└── angular.json            # Configuración general del espacio de trabajo Angular
+│   │   ├── components/
+│   │   │   ├── dashboard/
+│   │   │   ├── employee-grid/
+│   │   │   └── profile/
+│   │   ├── app-routing.module.ts
+│   │   ├── app.component.html
+│   │   ├── app.component.scss
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts
+│   │   └── app.module.ts
+│   ├── index.html
+│   ├── main.ts
+│   └── styles.scss
+├── .editorconfig
+├── .gitignore
+├── .prettierrc
+└── angular.json
 
 ## 4. Generación e Integración de Componentes Iniciales
 Los componentes iniciales fueron creados mediante la interfaz de comandos y se encuentran correctamente enlazados:
