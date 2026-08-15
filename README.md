@@ -1,64 +1,57 @@
-<<<<<<< HEAD
-# MiPrimerProyectoAngular
+# Directorio de Empleados (Employee Directory)
+Actividad 1 del Bimestre 4 de Taller - Fundación Kinal
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.1.4.
+## 1. Descripción Breve del Proyecto
+Este proyecto consiste en una aplicación desarrollada en Angular orientada a la gestión de un directorio de empleados. La documentación describe el proceso de creación, la arquitectura de carpetas, la integración de componentes iniciales y la planificación de la estructura para futuras conexiones con un backend.
 
-## Development server
+---
 
-To start a local development server, run:
+## Instalación y Ejecución
 
-```bash
-ng serve
-```
+1. Clona el repositorio e instala las dependencias utilizando **pnpm**:
+pnpm install
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 2. Creación Correcta del Proyecto con Angular CLI
+El proyecto se generó desde la terminal utilizando las herramientas oficiales de Angular CLI de forma limpia y sin errores de compilación.
+* Para iniciar el servidor de desarrollo local, ejecuta:
+  ng serve
 
-## Code scaffolding
+Una vez iniciado el servidor, abre tu navegador y navega a http://localhost:4200/. La aplicación se recargará automáticamente al modificar los archivos fuente.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+3. Estructura del Proyecto
+La arquitectura de directorios del proyecto se compone de los siguientes elementos clave:
 
-```bash
+src/: Directorio raíz que contiene todo el código fuente de la aplicación.
+
+app/: Contiene la lógica central, módulos y componentes principales del sistema.
+
+assets/: Carpeta destinada a recursos estáticos como imágenes, iconos o archivos multimedia.
+
+environments/: Archivos de configuración para gestionar variables de entorno según el entorno de ejecución.
+
+AppModule: Módulo principal que declara los componentes y gestiona las dependencias del sistema.
+
+AppComponent: Componente raíz que sirve como contenedor principal de la interfaz visual.
+
+4. Generación e Integración de Componentes Iniciales
+Los componentes iniciales fueron creados mediante la interfaz de comandos y se encuentran correctamente enlazados:
+Generación de componentes mediante comando:
+
 ng generate component component-name
-```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Cada componente creado se encuentra integrado dentro del módulo principal y se visualiza correctamente en la interfaz de la aplicación.
 
-```bash
-ng generate --help
-```
+5. Preparación para la Conexión con el Backend
+El proyecto cuenta con una organización básica orientada a la escalabilidad:
 
-## Building
+Se ha planificado la creación de una carpeta de servicios (services/) para centralizar la lógica de peticiones HTTP.
 
-To build the project run:
+Se estructuraron los puntos de conexión base utilizando los archivos de entornos (environments), facilitando la integración asíncrona con una API backend (Node.js u otro entorno).
 
-```bash
+Comandos Útiles Adicionales
+Construcción (Building)
+Para compilar el proyecto y generar los artefactos de producción en el directorio dist/:
 ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
+Pruebas (Testing)
+Para ejecutar pruebas unitarias con el capturador de pruebas configurado:
 ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-=======
-# employee-directory
-Directorio para empleados en Angular, Actividad 1 del Bimestre 4 de Taller
->>>>>>> 32da982bdca3ecfb012b01deba94938d69028690
