@@ -1,16 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { EmployeeGridComponent } from './employee-grid.component';
 
-describe('EmployeeGridComponent', () => {
-  let component: EmployeeGridComponent;
-  let fixture: ComponentFixture<EmployeeGridComponent>;
+import { Dashboard } from './dashboard.component';
+
+describe('Dashboard', () => {
+  let component: Dashboard;
+  let fixture: ComponentFixture<Dashboard>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [EmployeeGridComponent],
+      declarations: [Dashboard],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(EmployeeGridComponent);
+    fixture = TestBed.createComponent(Dashboard);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

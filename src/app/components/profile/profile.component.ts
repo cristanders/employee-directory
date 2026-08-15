@@ -4,6 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-profile',
   standalone: false,
   templateUrl: './profile.component.html',
-  styleUrl: './profile.component.scss',
+  styleUrl: './profile.component.scss'
 })
-export class ProfileComponent {}
+export class ProfileComponent {
+  profileTitle = 'My Profile';
+  statusText = 'Online';
+}

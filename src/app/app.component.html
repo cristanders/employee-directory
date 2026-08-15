@@ -12,13 +12,10 @@
         <app-profile></app-profile>
     </div>
 
-    <main class="dashboard-layout">
-        <div class="welcome-content">
-            <div class="badge">today's date : 14/08/2026</div>
-            <h1>Welcome to the employee directory<span>"COMPANY"</span></h1>
-            <p>This is a website featuring an employee directory for a fictional company, built using Angular.</p>
-        </div>
-    </main>
+    <div style="display: flex; flex-direction: column; gap: 40px; width: 100%; min-height: 100vh; justify-content: center; box-sizing: border-box; padding: 40px 0;">
+        <app-dashboard></app-dashboard>
+        <app-employee-grid></app-employee-grid>
+    </div>
 
 </body>
 </html>

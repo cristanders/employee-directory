@@ -1,1 +1,20 @@
-<p>employee-grid works!</p>
+<div class="employee-section">
+  <div class="section-header">
+    <h2>Directory of Employees</h2>
+    <p>Explore our company's talented team members across different departments.</p>
+  </div>
+
+  <div class="grid-container">
+    <div *ngFor="let emp of employees" class="employee-card">
+      <div class="avatar-placeholder">
+        {{ emp.name.charAt(0) }}
+      </div>
+      <div class="employee-info">
+        <h3>{{ emp.name }}</h3>
+        <span class="role">{{ emp.role }}</span>
+        <span class="department">{{ emp.department }}</span>
+        <p class="email">{{ emp.email }}</p>
+      </div>
+    </div>
+  </div>
+</div>

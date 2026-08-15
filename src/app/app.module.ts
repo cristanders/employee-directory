@@ -5,9 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { App } from './app.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { EmployeeGridComponent } from './components/employee-grid/employee-grid.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 @NgModule({
-  declarations: [App, ProfileComponent, EmployeeGridComponent],
+  declarations: [App, ProfileComponent, EmployeeGridComponent, DashboardComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
