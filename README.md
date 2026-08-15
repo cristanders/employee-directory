@@ -33,32 +33,6 @@ AppModule: Módulo principal que declara los componentes y gestiona las dependen
 
 AppComponent: Componente raíz que sirve como contenedor principal de la interfaz visual.
 
-EMPLOYEE-DIRECTORY/
-├── .angular/
-├── .vscode/
-├── node_modules/
-├── public/
-│   └── favicon.ico
-├── src/
-│   ├── app/
-│   │   ├── components/
-│   │   │   ├── dashboard/
-│   │   │   ├── employee-grid/
-│   │   │   └── profile/
-│   │   ├── app-routing.module.ts
-│   │   ├── app.component.html
-│   │   ├── app.component.scss
-│   │   ├── app.component.spec.ts
-│   │   ├── app.component.ts
-│   │   └── app.module.ts
-│   ├── index.html
-│   ├── main.ts
-│   └── styles.scss
-├── .editorconfig
-├── .gitignore
-├── .prettierrc
-└── angular.json
-
 ## 4. Generación e Integración de Componentes Iniciales
 Los componentes iniciales fueron creados mediante la interfaz de comandos y se encuentran correctamente enlazados:
 Generación de componentes mediante comando:
